@@ -28,9 +28,6 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"], // Allow importing without specifying file extensions
   },
-  optimization: {
-    minimize: false,
-  },
   devServer: {
     compress: true,
     allowedHosts: "all",
