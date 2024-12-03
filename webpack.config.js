@@ -28,10 +28,13 @@ module.exports = {
   optimization: {
     minimize: false,
   },
+  devServer: {
+    compress: true,
+    allowedHosts: "all",
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "public", "index.html"), // Adjust the path if necessary
+      template: path.resolve(__dirname, "src", "index.html"), // Adjust the path if necessary
     }),
-    new webpack.ProgressPlugin(),
   ],
 };
